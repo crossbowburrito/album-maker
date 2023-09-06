@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import 'font-awesome/css/font-awesome.min.css';
+
+
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: white;
+  background-color: #1a1a1a;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b2b2b;
+}
+
+h1 {
+  background-color: #2b2b2b;
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+}
+
+
+.content {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+
+button {
+  color: white;
+  background-color: #2eb82e;
+  border-radius: 8px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  margin-bottom: 16px;
+  color: white;
+}
+
+
+.row label {
+  margin-right: 8px;
+}
+
+.lefty, .righty, .centering, .centering2 {
+  display: flex;
+  align-items: center;
+}
+
+.lefty {
+  justify-content: flex-start;
+}
+
+.righty {
+  justify-content: flex-end;
+}
+
+.centering {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+
+.centering2 {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+  margin: 20px;
+}
+
+@media (max-width: 768px) {
+  .tempoSlider {
+      width: 65%;
+  }
+}
+
+.error {
+  background-color: #e74c3c;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(#1a1a1a, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 500px;
+}
+
+.close-button {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.Tooltip {
+  position: 'absolute';
+  top: '100%';
+  left: '50%';
+  transform: 'translateX(-50%)';
+  margin-top: '10px';
+}
+
+.tempoSlider {
+  width: 40%;
+  margin: 0 auto;
+}
+
+input[type=range] {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #2b2b2b; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+input[type=range]:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+input[type=range]::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.socials-container {
+  bottom: 65%;
+  text-align: center;
+  z-index: 999; /* Ensure it's above the footer */
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+}
+
+hr {
+  border: '1px solid white';
+  width: '100%';
+}
+
+.icon {
+    font-size: 18px;
+    border-color: aliceblue;
+    height: 46.59px;
+}
+
+i {
+  cursor: alias;
+}
+
